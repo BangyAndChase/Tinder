@@ -1,0 +1,41 @@
+[
+    {
+      "key": "ctrl+n",
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "ctrl+alt+right",
+      "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+      "key": "ctrl+alt+left",
+      "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+      "key": "ctrl+alt+s",
+      "command": "workbench.action.openSettings"
+    },
+    {
+      "key": "ctrl+,",
+      "command": "-workbench.action.openSettings"
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "explorer.newFolder"
+    },
+    {
+      "key": "ctrl+shift+/",
+      "command": "editor.action.blockComment",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "shift+alt+a",
+      "command": "-editor.action.blockComment",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+shift+e",
+      "command": "workbench.action.closeSidebar",
+      "when": "sideBarVisible && explorerViewletVisible && explorerViewletFocus"
+    }
+  ]
