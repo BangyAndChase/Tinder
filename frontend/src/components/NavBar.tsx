@@ -1,16 +1,16 @@
 import { cn } from "@/lib/utils";
+import { pages } from "@/types/enums";
 import { ClassName } from "@/types/overridable";
 import {
-  LucideActivity,
-  LucideAirVent,
-  LucideCircleUserRound,
   LucideHeartPulse,
-  LucideMessageCircle,
   LucideMessageSquare,
   LucideUser2,
 } from "lucide-react";
+import { usePageContext } from "./contextProviders/page/PageContextProvider";
 
 function NavBar({ className }: ClassName) {
+  const { currPage, setCurrPage } = usePageContext();
+
   return (
     <div
       className={cn(
@@ -18,13 +18,17 @@ function NavBar({ className }: ClassName) {
         className,
       )}
     >
-      <LucideMessageSquare className={""} size={35} />
-      <LucideActivity size={35} />
+      <button onClick={() => setCurrPage(pages.messages)}>
+        <LucideMessageSquare className={""} size={35} />
+      </button>
 
-      <LucideHeartPulse size={50} />
-      <LucideAirVent size={35} />
+      <button onClick={() => setCurrPage(pages.explore)}>
+        <LucideHeartPulse size={50} />
+      </button>
 
-      <LucideUser2 size={35} />
+      <button onClick={() => setCurrPage(pages.profile)}>
+        <LucideUser2 size={35} />
+      </button>
     </div>
   );
 }
