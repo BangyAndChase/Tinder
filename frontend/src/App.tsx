@@ -3,8 +3,8 @@ import ProfilePage from "@/pages/ProfilePage";
 
 function App() {
   return (
-    <div className={"flex h-screen flex-col bg-victoria-950 font-inter"}>
-      <ProfilePage className={"grow text-victoria-400"} />
+    <div className={"flex h-screen flex-col bg-background font-inter"}>
+      <ProfilePage className={"grow text-primary"} />
       <NavBar />
     </div>
   );

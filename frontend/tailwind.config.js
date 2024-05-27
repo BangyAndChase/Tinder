@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        strong: "0 0 50px 10px rgba(0, 0, 0, 0.2)",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
